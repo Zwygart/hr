@@ -19,4 +19,17 @@
 #
 #
 
-from . import hr
+from openerp import models, fields
+
+class partner(models.Model):
+    _name = 'res.partner'
+    _inherit = 'res.partner'
+
+    emergency = fields.One2many('hr.employee', 'emergency')
+
+class hr_employee(models.Model):
+    _name = 'hr.employee'
+    _inherit = 'hr.employee'
+
+    emergency = fields.Many2one('res.partner')
+

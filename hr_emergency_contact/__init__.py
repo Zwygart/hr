@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 #
 #
-#    Copyright (C) 2011,2013 Michael Telahun Makonnen <mmakonnen@gmail.com>.
+#    Copyright (C) 2011 Michael Telahun Makonnen <mmakonnen@gmail.com>.
 #    All Rights Reserved.
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -19,24 +19,4 @@
 #
 #
 
-{
-    'name': 'HR Emergency Contact',
-    'version': '1.0',
-    'category': 'Generic Modules/Human Resources',
-    'description': """
-Emergency Contact information for Employee
-==========================================
-    """,
-    'author': "Michael Telahun Makonnen <mmakonnen@gmail.com>,Odoo Community Association (OCA)",
-    'website': 'http://www.openerp.com',
-    'license': 'AGPL-3',
-    'depends': [
-        'hr',
-    ],
-    'data': [
-        'hr_view.xml',
-    ],
-    'test': [
-    ],
-    'installable': False,
-}
+from . import emergency_contact
